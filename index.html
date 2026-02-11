@@ -58,6 +58,24 @@
         *{
             border:10px solid #000;
         }
+        /*
+        6.Group/combinational selector Syntax
+        element1, element2,element3....{
+        property:value;
+        }
+        */
+        div,span#a1,span.b1,a[href="https://www.google.com"]{
+            display:inline-block;
+        }
+        /*
+        7.css Pesudo element selector::
+    element::selector{
+        property:value;
+    }
+*/
+h1::after{
+    content:url('./giphy.gif')
+}
     </style>
 </head>
 <body>
@@ -65,6 +83,6 @@
     <span id="a1">CSS Id Selector. #</span>
     <span class="b1">CSS Class Selector</span>
     <a href="https://www.google.com">CSS Attribute Selector</a> 
-
+    <h1>css pesudo element selector::</h1>
 </body>
 </html>
